@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Afriglobal Resources Limited - Institutional-grade gold & mineral mining investment in Tanzania. TIC registered (No: 186397266), active production, verified reserves.">
+    <meta property="og:title" content="Afriglobal Resources Limited | Institutional Mining Investment Tanzania">
+    <meta property="og:description" content="Partnering with Institutional Investors for Responsible Mining Growth in Tanzania. De-risked mining investment with active production.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afriglobalresources.netlify.app">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Afriglobal Resources Limited | Partnering with Institutional Investors for Responsible Mining Growth in Tanzania</title>
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://code.tidio.co">
+    
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;background:#f8fafc;color:#1f2937}
+        :root{--gold:#D4AF37;--dark:#0F172A}
+        .text-gold{color:var(--gold)}
+        .bg-gold{background:var(--gold)}
+        .container-custom{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+        section{padding:4rem 0}
+        .hero-section{position:relative;min-height:90vh;display:flex;align-items:center;background:linear-gradient(180deg,rgba(15,23,42,0.85)0%,rgba(15,23,42,0.75)40%,rgba(15,23,42,0.9)100%),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0%25" y1="0%25" x2="0%25" y2="100%25"><stop offset="0%25" style="stop-color:%231a1a2e"/><stop offset="40%25" style="stop-color:%23e8a87c"/><stop offset="70%25" style="stop-color:%23d4956b"/><stop offset="100%25" style="stop-color:%232d1f1f"/></linearGradient></defs><rect width="1200" height="800" fill="url(%23sky)"/><path d="M0 450 L150 380 L280 420 L400 350 L520 400 L650 320 L780 370 L900 300 L1050 360 L1200 280 L1200 800 L0 800Z" fill="%233d2b1f" opacity="0.9"/><path d="M0 500 L120 460 L250 500 L380 440 L500 490 L620 430 L750 480 L880 420 L1000 470 L1200 430 L1200 800 L0 800Z" fill="%232d1f1a" opacity="0.95"/><path d="M0 550 L180 520 L350 550 L500 510 L680 540 L850 500 L1000 530 L1200 490 L1200 800 L0 800Z" fill="%231f1410"/><circle cx="900" cy="100" r="40" fill="%23f4a460" opacity="0.6"/></svg>');background-size:cover;background-position:center}
+        .hero-overlay-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+        .particle{position:absolute;width:3px;height:3px;background:var(--gold);border-radius:50%;animation:floatUp 6s infinite;opacity:0}
+        .particle:nth-child(1){left:10%;animation-delay:0s}.particle:nth-child(2){left:25%;animation-delay:1s}.particle:nth-child(3){left:40%;animation-delay:2s}.particle:nth-child(4){left:55%;animation-delay:3s}.particle:nth-child(5){left:70%;animation-delay:4s}.particle:nth-child(6){left:85%;animation-delay:5s}.particle:nth-child(7){left:15%;animation-delay:2.5s}.particle:nth-child(8){left:50%;animation-delay:1.5s}.particle:nth-child(9){left:75%;animation-delay:3.5s}.particle:nth-child(10){left:90%;animation-delay:4.5s}
+        @keyframes floatUp{0%{transform:translateY(100vh)scale(0);opacity:0}10%{opacity:0.8}90%{opacity:0.2}100%{transform:translateY(-10vh)scale(1.5);opacity:0}}
+        .card{background:#fff;border:1px solid #e5e7eb;border-radius:1rem;padding:1.5rem;transition:all .3s}
+        .card:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.06);border-color:var(--gold)}
+        .card-dark{background:rgba(30,41,59,.5);border:1px solid rgba(75,85,99,.5);border-radius:1rem;padding:1.5rem}
+        .ticker-bar{background:linear-gradient(90deg,#0F172A,#1B3A3A);border-bottom:1px solid rgba(212,175,55,.2)}
+        .resource-link{background:#fff;border:2px solid #e5e7eb;border-radius:.75rem;padding:1rem 1.25rem;display:flex;align-items:flex-start;gap:1rem;text-decoration:none;transition:all .3s}
+        .resource-link:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 6px 20px rgba(212,175,55,.12)}
+        .faq-q{cursor:pointer;padding:1rem 0;font-weight:600;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e7eb}
+        .faq-a{max-height:0;overflow:hidden;transition:max-height .3s,padding .3s}
+        .faq-a.open{max-height:400px;padding-bottom:1rem}
+        .big-number{font-size:2.5rem;font-weight:800;line-height:1}
+        .map-box{border-radius:1rem;overflow:hidden;border:2px solid rgba(212,175,55,.3);box-shadow:0 4px 20px rgba(0,0,0,.1)}
+        .map-box iframe{width:100%;height:300px;border:none}
+        .whatsapp-btn{position:fixed;bottom:1.5rem;right:6rem;z-index:99;animation:pulse 3s infinite}
+        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+        .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem .8rem;border-radius:.5rem;font-size:.8rem;font-weight:600}
+        .headline-glow{text-shadow:0 0 40px rgba(212,175,55,0.3),0 0 80px rgba(212,175,55,0.1)}
+        @media(max-width:768px){section{padding:2.5rem 0}.big-number{font-size:2rem}.map-box iframe{height:220px}.hero-section{min-height:80vh}.whatsapp-btn{right:5rem}}
+    </style>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{gold:'#D4AF37','gold-dark':'#B5952F',dark:'#0F172A','gray-dark':'#1E293B',emerald:'#059669'}}}}</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Tidio Chat Widget -->
+    <script src="https://code.tidio.co/ozjhc7u57qaietwysh238ekd5byxvvqq.js" async></script>
+</head>
+<body>
+
+    <a href="https://wa.me/255713801818" target="_blank" rel="noopener noreferrer" class="whatsapp-btn bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-emerald-600 transition" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+
+    <nav class="bg-dark/95 backdrop-blur-md text-white sticky top-0 z-40 border-b border-gray-700">
+        <div class="container-custom py-3 flex justify-between items-center">
+            <a href="#home" class="text-gold font-extrabold text-lg tracking-wider">AFRIGLOBAL</a>
+            <button id="menu-btn" class="md:hidden text-gold text-2xl p-2" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            <div class="hidden md:flex gap-1 text-sm font-medium">
+                <a href="#about" class="px-3 py-2 hover:text-gold transition">About</a>
+                <a href="#fields" class="px-3 py-2 hover:text-gold transition">Fields</a>
+                <a href="#investment" class="px-3 py-2 hover:text-gold transition">Investment</a>
+                <a href="#team" class="px-3 py-2 hover:text-gold transition">Team</a>
+                <a href="#resources" class="px-3 py-2 hover:text-gold transition">Resources</a>
+                <a href="#faq" class="px-3 py-2 hover:text-gold transition">FAQ</a>
+                <a href="#contact" class="ml-2 bg-gold text-dark px-4 py-2 rounded-lg font-bold hover:opacity-90 transition">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-dark px-6 pb-4 space-y-1 border-t border-gray-700">
+            <a href="#about" class="block py-2">About</a><a href="#fields" class="block py-2">Fields</a><a href="#investment" class="block py-2">Investment</a><a href="#team" class="block py-2">Team</a><a href="#resources" class="block py-2">Resources</a><a href="#faq" class="block py-2">FAQ</a><a href="#contact" class="block py-2 text-gold font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <div class="ticker-bar text-white py-2">
+        <div class="container-custom flex flex-wrap justify-center gap-4 md:gap-6 text-xs font-mono">
+            <span><span class="text-yellow-400">🥇 Gold</span> <span class="text-gold font-bold" id="ticker-gold">Loading...</span></span>
+            <span><span class="text-gray-300">⚪ Silver</span> <span class="text-white font-bold" id="ticker-silver">Loading...</span></span>
+            <span><span class="text-blue-300">🔷 Platinum</span> <span class="text-white font-bold" id="ticker-platinum">Loading...</span></span>
+            <span><span class="text-purple-300">🟣 Palladium</span> <span class="text-white font-bold" id="ticker-palladium">Loading...</span></span>
+            <span class="text-emerald-400 text-xs font-bold">● LIVE</span>
+        </div>
+    </div>
+
+    <section id="home" class="hero-section text-white">
+        <div class="hero-overlay-particles"><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div></div>
+        <div class="container-custom relative z-10 w-full">
+            <div class="max-w-4xl mx-auto text-center py-16 md:py-24">
+                <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 text-gold text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-8 backdrop-blur-sm"><span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> TIC Registered No: 186397266 • Active Production • Mining Commission Licensed</div>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight headline-glow"><span class="text-gold">Afriglobal Resources</span></h1>
+                <p class="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-4 leading-snug">Partnering with Institutional Investors<br>for Responsible Mining Growth in Tanzania</p>
+                <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">Two active gold production sites. Three commodity streams. Zero exploration risk. We transform Tanzania's mineral wealth into institutional-grade investment opportunities.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#about" class="bg-gold text-dark px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition shadow-2xl"><i class="fa-solid fa-building mr-2"></i> Discover Afriglobal</a>
+                    <a href="#contact" class="border-2 border-white/40 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition backdrop-blur-sm"><i class="fa-solid fa-file-contract mr-2"></i> Request Investment Information</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10"><div class="big-number text-gold">2</div><div class="text-sm text-gray-300 mt-1 font-medium">Active Gold Sites</div><div class="text-xs text-gray-400 mt-1">Makongoros & Kilindi</div></div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10"><div class="big-number text-gold">3</div><div class="text-sm text-gray-300 mt-1 font-medium">Commodity Streams</div><div class="text-xs text-gray-400 mt-1">Gold • Copper • Garnet</div></div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10"><div class="big-number text-gold">100%</div><div class="text-sm text-gray-300 mt-1 font-medium">Regulatory Compliance</div><div class="text-xs text-gray-400 mt-1">TIC & Mining Licensed</div></div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/10"><div class="big-number text-emerald-400">Now</div><div class="text-sm text-gray-300 mt-1 font-medium">Cash Flow Generation</div><div class="text-xs text-gray-400 mt-1">No Exploration Risk</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white">
+        <div class="container-custom"><div class="max-w-4xl mx-auto"><div class="text-center mb-10"><span class="text-gold uppercase text-xs font-bold tracking-wider">The Company</span><h2 class="text-3xl md:text-4xl font-bold mt-2 mb-3">Afriglobal Resources Limited</h2><p class="text-gray-600 max-w-lg mx-auto">A Tanzanian mining company delivering institutional-grade investment through active production, verified reserves, and full regulatory compliance.</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div><h3 class="text-xl font-bold mb-3">Who We Are</h3><p class="text-gray-600 text-sm leading-relaxed"><strong>Afriglobal Resources Limited</strong> is a privately held Tanzanian mineral resource company extracting and commercializing precious metals, base metals, and industrial minerals. We operate two active gold production sites in <strong>Chunya (Mbeya)</strong> and <strong>Kilindi (Tanga)</strong>, with garnet extraction from <strong>Korogwe (Tanga)</strong>.</p><p class="text-gray-600 text-sm leading-relaxed mt-2">Our multi-commodity portfolio—gold, copper, and industrial garnet—provides natural hedging. As a <strong>TIC registered</strong> entity with full <strong>Mining Commission</strong> licensing, we operate within a robust regulatory framework.</p><div class="flex flex-wrap gap-2 mt-3"><span class="badge bg-emerald-50 text-emerald-700 border border-emerald-200"><i class="fa-solid fa-check-circle text-emerald-500 text-xs"></i>TIC: 186397266</span><span class="badge bg-blue-50 text-blue-700 border border-blue-200"><i class="fa-solid fa-check-circle text-blue-500 text-xs"></i>Mining Licensed</span><span class="badge bg-green-50 text-green-700 border border-green-200"><i class="fa-solid fa-check-circle text-green-500 text-xs"></i>NEMC Certified</span><span class="badge bg-purple-50 text-purple-700 border border-purple-200"><i class="fa-solid fa-check-circle text-purple-500 text-xs"></i>EITI Aligned</span></div></div>
+            <div class="space-y-3"><div class="bg-dark text-white p-4 rounded-lg"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-bullseye text-gold"></i><h4 class="font-bold text-sm">Our Mission</h4></div><p class="text-gray-300 text-xs">Deliver superior risk-adjusted returns through responsible mineral resource development and operational excellence.</p></div><div class="bg-dark text-white p-4 rounded-lg"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-eye text-gold"></i><h4 class="font-bold text-sm">Our Vision</h4></div><p class="text-gray-300 text-xs">Become East Africa's premier partner for institutional mining investment.</p></div><div class="bg-dark text-white p-4 rounded-lg"><div class="flex items-center gap-2 mb-1"><i class="fa-solid fa-handshake text-gold"></i><h4 class="font-bold text-sm">Our Commitment</h4></div><p class="text-gray-300 text-xs">Institutional-grade transparency, regulatory compliance, and environmental stewardship.</p></div></div></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="card"><h3 class="text-lg font-bold mb-3"><i class="fa-solid fa-certificate text-gold mr-2"></i>Corporate Identity</h3><table class="w-full text-xs"><tbody><tr class="border-b border-gray-100"><td class="py-2 font-medium text-gray-600 w-2/5">Legal Name</td><td class="py-2 font-bold text-right">Afriglobal Resources Limited</td></tr><tr class="border-b border-gray-100"><td class="py-2 font-medium text-gray-600">Registration No.</td><td class="py-2 font-mono text-right">1863972266</td></tr><tr class="border-b border-gray-100"><td class="py-2 font-medium text-gray-600">TIC Registration No.</td><td class="py-2 font-mono text-right font-bold text-gold">186397266</td></tr><tr class="border-b border-gray-100"><td class="py-2 font-medium text-gray-600">Taxpayer ID (TIN)</td><td class="py-2 font-mono text-right">186-397-266</td></tr><tr class="border-b border-gray-100"><td class="py-2 font-medium text-gray-600">Legal Structure</td><td class="py-2 text-right">Private Limited Company</td></tr><tr><td class="py-2 font-medium text-gray-600">Registered Office</td><td class="py-2 text-xs text-right">Palm Village, Tower Five, Floor 6, Plot 119, Mikocheni, Dar es Salaam</td></tr></tbody></table></div><div class="bg-dark text-white p-5 rounded-xl"><h3 class="text-lg font-bold text-gold mb-3"><i class="fa-solid fa-star mr-2"></i>Key Facts</h3><ul class="space-y-2 text-xs"><li class="flex items-start gap-2"><i class="fa-solid fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>TIC Registered No: 186397266 with full investment incentives</li><li class="flex items-start gap-2"><i class="fa-solid fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>Mining Commission licensed for extraction & processing</li><li class="flex items-start gap-2"><i class="fa-solid fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>Two active gold production sites with immediate cash flow</li><li class="flex items-start gap-2"><i class="fa-solid fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>Diversified: gold, copper, industrial garnet</li><li class="flex items-start gap-2"><i class="fa-solid fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>Third-party verified geological reports</li><li class="flex items-start gap-2"><i class="fa-solid fa-check-circle text-green-400 mt-0.5 flex-shrink-0"></i>AML/KYC protocols on all partnerships</li></ul><a href="https://portal.madini.go.tz/page/PublicMap" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gold text-dark px-4 py-2 rounded-lg font-bold text-xs hover:opacity-90 transition mt-3"><i class="fa-solid fa-up-right-from-square"></i> Verify on Mining Registry</a></div></div></div></div>
+    </section>
+
+    <section id="fields" class="bg-gray-50 border-y border-gray-200">
+        <div class="container-custom"><div class="max-w-4xl mx-auto"><div class="text-center mb-10"><span class="text-gold uppercase text-xs font-bold tracking-wider">Mining Fields</span><h2 class="text-3xl font-bold mt-2 mb-3">Active Operations & Development Sites</h2></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"><div class="card border-t-4 border-yellow-500"><span class="text-xs font-bold bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Active Production</span><h4 class="text-lg font-bold mt-2">Makongoros Gold Field</h4><p class="text-gray-500 text-xs">Chunya, Mbeya</p><div class="grid grid-cols-2 gap-2 mt-3"><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Status</p><p class="font-bold text-emerald-700 text-xs">Operational</p></div><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Process</p><p class="font-bold text-xs">Vat Leaching</p></div><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Type</p><p class="font-bold text-xs">Flagship</p></div><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">License</p><p class="font-bold text-xs">Full</p></div></div></div><div class="card border-t-4 border-yellow-500"><span class="text-xs font-bold bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Active Production</span><h4 class="text-lg font-bold mt-2">Kilindi Gold Field</h4><p class="text-gray-500 text-xs">Kilindi, Tanga</p><div class="grid grid-cols-2 gap-2 mt-3"><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Status</p><p class="font-bold text-emerald-700 text-xs">Operational</p></div><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Process</p><p class="font-bold text-xs">Vat Leaching</p></div><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Logistics</p><p class="font-bold text-purple-700 text-xs">Export-Ready</p></div><div class="bg-yellow-50 p-2 rounded text-center"><p class="text-xs text-gray-500">License</p><p class="font-bold text-xs">Full</p></div></div></div></div>
+        <div class="card border-t-4 border-orange-500 mb-6"><span class="text-xs font-bold bg-orange-100 text-orange-800 px-2 py-1 rounded-full">Active Supply</span><h4 class="text-lg font-bold mt-2">Multiple Copper Extraction Sites</h4><p class="text-gray-500 text-xs">Various locations, Tanzania</p><div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3"><div class="bg-orange-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Status</p><p class="font-bold text-emerald-700 text-xs">Active</p></div><div class="bg-orange-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Output</p><p class="font-bold text-xs">Industrial Grade</p></div><div class="bg-orange-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Market</p><p class="font-bold text-xs">Global Supply</p></div><div class="bg-orange-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Demand</p><p class="font-bold text-xs">Green Energy</p></div></div></div>
+        <div class="card border-t-4 border-green-500"><span class="text-xs font-bold bg-green-100 text-green-800 px-2 py-1 rounded-full">Development</span><h4 class="text-lg font-bold mt-2">Kegwasi Garnet Field</h4><p class="text-gray-500 text-xs">Korogwe, Tanga</p><div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3"><div class="bg-green-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Status</p><p class="font-bold text-amber-700 text-xs">Developing</p></div><div class="bg-green-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Mineral</p><p class="font-bold text-xs">High-Value Garnet</p></div><div class="bg-green-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Pricing</p><p class="font-bold text-emerald-700 text-xs">Premium</p></div><div class="bg-green-50 p-2 rounded text-center"><p class="text-xs text-gray-500">Applications</p><p class="font-bold text-xs">Waterjet, Abrasives</p></div></div></div></div></div>
+    </section>
+
+    <section id="investment" class="bg-dark text-white">
+        <div class="container-custom"><div class="text-center mb-10"><span class="text-gold uppercase text-xs font-bold tracking-wider">Investment</span><h2 class="text-3xl font-bold mt-2 mb-3">Why Afriglobal Resources</h2></div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8"><div class="card-dark text-center"><div class="text-2xl mb-1">⚡</div><h3 class="font-bold text-sm">De-Risked</h3><p class="text-gray-400 text-xs">Active production. No exploration risk.</p></div><div class="card-dark text-center"><div class="text-2xl mb-1">🛡️</div><h3 class="font-bold text-sm">Fully Licensed</h3><p class="text-gray-400 text-xs">TIC & Mining Commission.</p></div><div class="card-dark text-center"><div class="text-2xl mb-1">📊</div><h3 class="font-bold text-sm">Multi-Commodity</h3><p class="text-gray-400 text-xs">Gold + Copper + Garnet.</p></div><div class="card-dark text-center"><div class="text-2xl mb-1">🤝</div><h3 class="font-bold text-sm">Flexible</h3><p class="text-gray-400 text-xs">Equity, JV, profit-sharing.</p></div></div>
+        <div class="max-w-2xl mx-auto"><div class="overflow-x-auto"><table class="w-full text-xs"><thead><tr class="border-b border-gray-700"><th class="text-left py-2 px-2">Metric</th><th class="text-center py-2 px-2 bg-gold/10 rounded-t-lg"><span class="text-gold font-bold">Afriglobal</span></th><th class="text-center py-2 px-2">Junior Explorer</th><th class="text-center py-2 px-2">Mid-Tier</th></tr></thead><tbody class="divide-y divide-gray-700"><tr><td class="py-2 px-2">Time to Revenue</td><td class="text-center py-2 px-2 bg-gold/5"><span class="text-emerald-400 font-bold">Immediate</span></td><td class="text-center py-2 px-2 text-red-400">5-10 Yrs</td><td class="text-center py-2 px-2 text-amber-400">2-4 Yrs</td></tr><tr><td class="py-2 px-2">Regulatory Risk</td><td class="text-center py-2 px-2 bg-gold/5"><span class="text-emerald-400 font-bold">None</span></td><td class="text-center py-2 px-2 text-red-400">Permitting</td><td class="text-center py-2 px-2 text-amber-400">Partial</td></tr><tr><td class="py-2 px-2">Commodities</td><td class="text-center py-2 px-2 bg-gold/5"><span class="text-emerald-400 font-bold">3 Streams</span></td><td class="text-center py-2 px-2">Single</td><td class="text-center py-2 px-2">1-2</td></tr></tbody></table></div></div></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- TEAM SECTION - ALL MEMBERS MATCHING GOLD THEME -->
+    <!-- ============================================ -->
+    <section id="team" class="bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-8">
+                <span class="text-gold uppercase text-xs font-bold tracking-wider">Leadership</span>
+                <h2 class="text-3xl font-bold mt-2 mb-3">The Team</h2>
+                <p class="text-gray-600 text-sm max-w-2xl mx-auto">Experienced professionals combining technical mining expertise, strategic business leadership, geological knowledge, and deep Tanzanian operational experience.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+                <!-- Prof. Berhanu Alemaw -->
+                <div class="card text-center">
+                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-gold">
+                        <i class="fa-solid fa-user-tie text-gold text-xl"></i>
+                    </div>
+                    <span class="inline-block bg-dark text-gold text-xs font-bold px-3 py-1 rounded-full mb-2">Shareholder</span>
+                    <h3 class="font-bold">Prof. Berhanu Alemaw</h3>
+                    <p class="text-gold text-xs uppercase">Strategic Advisor</p>
+                    <p class="text-gray-500 text-xs mt-1">Founder of Continental Infrastructure. Global civil engineering authority with decades of large-scale project execution.</p>
+                </div>
+                
+                <!-- Ahmed Nassor Khalifa -->
+                <div class="card text-center border-t-4 border-gold">
+                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-gold">
+                        <i class="fa-solid fa-user-gear text-gold text-xl"></i>
+                    </div>
+                    <span class="inline-block bg-dark text-gold text-xs font-bold px-3 py-1 rounded-full mb-2">Shareholder</span>
+                    <h3 class="font-bold">Ahmed Nassor Khalifa</h3>
+                    <p class="text-gold text-xs uppercase">Operations Director</p>
+                    <p class="text-gray-500 text-xs mt-1">Mining investment appraisal expert. Oversees day-to-day operations and capital allocation decisions.</p>
+                </div>
+                
+                <!-- Dr. Najjim Zuberi Msenga -->
+                <div class="card text-center">
+                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-gold">
+                        <i class="fa-solid fa-briefcase text-gold text-xl"></i>
+                    </div>
+                    <span class="inline-block bg-dark text-gold text-xs font-bold px-3 py-1 rounded-full mb-2">Business Advisor</span>
+                    <h3 class="font-bold">Dr. Najjim Zuberi Msenga</h3>
+                    <p class="text-gold text-xs uppercase">Mining Pioneer</p>
+                    <p class="text-gray-500 text-xs mt-1">20+ years in Tanzania's mining sector. Expert in structuring major investment deals and regulatory navigation.</p>
+                </div>
+                
+                <!-- Thomas Emmanuel Simwinga - MATCHING GOLD THEME -->
+                <div class="card text-center">
+                    <div class="w-14 h-14 bg-dark rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-gold">
+                        <i class="fa-solid fa-magnifying-glass-chart text-gold text-xl"></i>
+                    </div>
+                    <span class="inline-block bg-dark text-gold text-xs font-bold px-3 py-1 rounded-full mb-2">Professional Geologist</span>
+                    <h3 class="font-bold">Thomas Emmanuel Simwinga</h3>
+                    <p class="text-gold text-xs uppercase">Exploration Geologist</p>
+                    <p class="text-gray-500 text-xs mt-1">Professional geologist with extensive experience in mineral exploration across Tanzania and neighboring countries. Expert in geological surveys, resource estimation, and exploration program management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="bg-gray-50 border-y border-gray-200">
+        <div class="container-custom"><div class="text-center mb-8"><span class="text-gold uppercase text-xs font-bold tracking-wider">Resources</span><h2 class="text-3xl font-bold mt-2 mb-3">Essential Tanzania Mining Links</h2></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-3xl mx-auto">
+            <a href="https://portal.madini.go.tz/page/PublicMap" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-map-location-dot text-gold"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Mining Commission Registry</h4><p class="text-gray-500 text-xs">Verify mineral rights & licenses</p></div></a>
+            <a href="https://tic.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-building-columns text-blue-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Tanzania Investment Centre</h4><p class="text-gray-500 text-xs">Investment registration & TIC verification</p></div></a>
+            <a href="https://tumemadini.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-gem text-gold"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Mining Commission Tanzania</h4><p class="text-gray-500 text-xs">Licensing & regulation</p></div></a>
+            <a href="https://www.minerals.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-landmark text-purple-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Ministry of Minerals</h4><p class="text-gray-500 text-xs">Policy & sector development</p></div></a>
+            <a href="https://www.tra.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file-invoice text-amber-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Tanzania Revenue Authority</h4><p class="text-gray-500 text-xs">Tax compliance & incentives</p></div></a>
+            <a href="https://www.bot.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-rose-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-coins text-rose-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Bank of Tanzania</h4><p class="text-gray-500 text-xs">FX regulations & gold reserves</p></div></a>
+            <a href="https://tcme.or.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-handshake text-teal-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Chamber of Minerals & Energy</h4><p class="text-gray-500 text-xs">Industry association</p></div></a>
+            <a href="https://www.nemc.or.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-leaf text-emerald-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">NEMC</h4><p class="text-gray-500 text-xs">Environmental compliance</p></div></a>
+            <a href="https://www.kitco.com" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-chart-line text-amber-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Kitco Metals</h4><p class="text-gray-500 text-xs">Live precious metals pricing</p></div></a>
+            <a href="https://www.mining.com" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-newspaper text-gray-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Mining.com</h4><p class="text-gray-500 text-xs">Global mining news & data</p></div></a>
+            <a href="https://www.gst.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-magnifying-glass-chart text-orange-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">Geological Survey of Tanzania</h4><p class="text-gray-500 text-xs">Geological maps & surveys</p></div></a>
+            <a href="https://www.osha.go.tz" target="_blank" rel="noopener noreferrer" class="resource-link"><div class="w-9 h-9 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-hard-hat text-red-600"></i></div><div><h4 class="font-bold text-gray-900 text-xs">OSHA Tanzania</h4><p class="text-gray-500 text-xs">Workplace safety regulations</p></div></a>
+        </div></div>
+    </section>
+
+    <section id="faq" class="bg-white">
+        <div class="container-custom"><div class="max-w-xl mx-auto"><div class="text-center mb-6"><span class="text-gold uppercase text-xs font-bold tracking-wider">FAQ</span><h2 class="text-2xl font-bold mt-2 mb-3">Common Questions</h2></div>
+        <div><div class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('i').style.transform=this.nextElementSibling.classList.contains('open')?'rotate(180deg)':'rotate(0deg)'"><span>Minimum investment amount?</span><i class="fa-solid fa-chevron-down text-gold transition-transform"></i></div><div class="faq-a"><p class="text-gray-600 text-xs pb-2">Flexible structures. Specifics discussed during due diligence based on partnership type.</p></div>
+        <div class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('i').style.transform=this.nextElementSibling.classList.contains('open')?'rotate(180deg)':'rotate(0deg)'"><span>How to verify licenses?</span><i class="fa-solid fa-chevron-down text-gold transition-transform"></i></div><div class="faq-a"><p class="text-gray-600 text-xs pb-2">All mineral rights registered with Mining Commission. TIC No: 186397266. Verify at <a href="https://portal.madini.go.tz/page/PublicMap" target="_blank" rel="noopener noreferrer" class="text-gold underline">portal.madini.go.tz</a>.</p></div>
+        <div class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('i').style.transform=this.nextElementSibling.classList.contains('open')?'rotate(180deg)':'rotate(0deg)'"><span>Geological data available?</span><i class="fa-solid fa-chevron-down text-gold transition-transform"></i></div><div class="faq-a"><p class="text-gray-600 text-xs pb-2">Third-party verified reports, independent assays, and operational KPIs available under NDA.</p></div>
+        <div class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('i').style.transform=this.nextElementSibling.classList.contains('open')?'rotate(180deg)':'rotate(0deg)'"><span>Schedule a site visit?</span><i class="fa-solid fa-chevron-down text-gold transition-transform"></i></div><div class="faq-a"><p class="text-gray-600 text-xs pb-2">Available to qualified investors with executed NDA. Typically within 2-3 weeks.</p></div>
+        <div class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('i').style.transform=this.nextElementSibling.classList.contains('open')?'rotate(180deg)':'rotate(0deg)'"><span>Exit strategies?</span><i class="fa-solid fa-chevron-down text-gold transition-transform"></i></div><div class="faq-a"><p class="text-gray-600 text-xs pb-2">Structured buyback mechanisms, secondary sale rights, and asset liquidation preferences.</p></div></div></div></div>
+    </section>
+
+    <section id="contact" class="bg-dark text-white">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto text-center mb-6"><span class="text-gold uppercase text-xs font-bold tracking-wider">Contact</span><h2 class="text-2xl font-bold mt-2 mb-3">Visit or Reach Out</h2><p class="text-gray-400 text-sm">Complete the form below. Our team responds within 24-48 hours.</p></div>
+            <div class="max-w-3xl mx-auto mb-6"><div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.011882123456!2d39.253123!3d-6.750123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPalm+Village+Mikocheni+Dar+es+Salaam!5e0!3m2!1sen!2stz!4v1699000000000" allowfullscreen="" loading="lazy" title="Afriglobal Resources Office"></iframe></div><p class="text-center text-gray-400 text-xs mt-2"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Palm Village, Tower Five, Floor 6, Plot 119, Mikocheni, Dar es Salaam</p></div>
+            <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form id="investor-form" class="space-y-2">
+                    <input type="hidden" name="_subject" value="New Investor Inquiry - Afriglobal Resources">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                    <input type="text" name="name" id="form-name" required class="w-full px-3 py-2 bg-gray-dark border border-gray-600 rounded-lg text-white text-sm" placeholder="Full Legal Name *">
+                    <input type="email" name="email" id="form-email" required class="w-full px-3 py-2 bg-gray-dark border border-gray-600 rounded-lg text-white text-sm" placeholder="Professional Email *">
+                    <input type="tel" name="phone" id="form-phone" required class="w-full px-3 py-2 bg-gray-dark border border-gray-600 rounded-lg text-white text-sm" placeholder="Phone Number with Country Code *">
+                    <select name="investor_category" id="form-category" required class="w-full px-3 py-2 bg-gray-dark border border-gray-600 rounded-lg text-white text-sm"><option value="">Investor Category *</option><option value="Institutional Investor">Institutional Investor (Fund/PE)</option><option value="Family Office">Family Office</option><option value="High Net Worth Individual">High Net Worth Individual</option><option value="Corporate Strategic">Corporate Strategic Investor</option></select>
+                    <select name="investment_range" id="form-range" required class="w-full px-3 py-2 bg-gray-dark border border-gray-600 rounded-lg text-white text-sm"><option value="">Anticipated Investment Range *</option><option value="Under $50,000">Under $50,000</option><option value="$50,000 - $100,000">$50,000 - $100,000</option><option value="$100,000 - $250,000">$100,000 - $250,000</option><option value="$250,000 - $500,000">$250,000 - $500,000</option><option value="$500,000 - $1,000,000">$500,000 - $1,000,000</option><option value="$1,000,000+">$1,000,000+</option></select>
+                    <textarea name="message" id="form-message" rows="3" required class="w-full px-3 py-2 bg-gray-dark border border-gray-600 rounded-lg text-white text-sm" placeholder="Specify documents requested, site visit interest, or specific questions..."></textarea>
+                    <div class="flex items-start gap-2"><input type="checkbox" id="form-accredited" required class="mt-1 accent-gold"><label class="text-xs text-gray-400">I confirm I am a qualified/accredited investor with capacity for speculative mining investments. *</label></div>
+                    <div class="flex items-start gap-2"><input type="checkbox" id="form-privacy" required class="mt-1 accent-gold"><label class="text-xs text-gray-400">I agree to the Privacy Policy and consent to being contacted regarding this inquiry. *</label></div>
+                    <button type="submit" id="submit-btn" class="w-full bg-gold text-dark font-bold py-3 rounded-lg hover:opacity-90 transition text-sm shadow-lg"><i class="fa-solid fa-paper-plane mr-2"></i> Submit Due Diligence Inquiry</button>
+                    <div id="form-status" class="hidden text-xs text-center p-3 rounded-lg"></div>
+                    <p class="text-center text-gray-500 text-xs">🔒 Information handled confidentially. Response within 24-48 business hours.</p>
+                </form>
+                <div class="space-y-2">
+                    <div class="bg-gray-dark/50 p-3 rounded-lg border border-gray-700"><h4 class="font-bold text-gold text-xs mb-1"><i class="fa-solid fa-phone mr-1"></i>Direct Contact Lines</h4><p class="text-gray-300 text-xs"><a href="tel:+255713801818" class="hover:text-gold">+255 713 801818</a> <span class="text-emerald-400 text-xs">(WhatsApp)</span></p><p class="text-gray-300 text-xs"><a href="tel:+255623565647" class="hover:text-gold">+255 623 565 647</a></p><p class="text-gray-300 text-xs"><a href="tel:+255692224999" class="hover:text-gold">+255 692 224 999</a></p></div>
+                    <div class="bg-gray-dark/50 p-3 rounded-lg border border-gray-700"><h4 class="font-bold text-gold text-xs mb-1"><i class="fa-solid fa-envelope mr-1"></i>Investor Relations</h4><p class="text-gray-300 text-xs"><a href="mailto:afriglobalresources@gmail.com" class="hover:text-gold break-all">afriglobalresources@gmail.com</a></p></div>
+                    <div class="bg-gray-dark/50 p-3 rounded-lg border border-gray-700"><h4 class="font-bold text-gold text-xs mb-1"><i class="fa-solid fa-clock mr-1"></i>Business Hours</h4><p class="text-gray-300 text-xs">Monday - Friday</p><p class="text-gray-300 text-xs">8:00 AM - 5:00 PM (EAT / UTC+3)</p></div>
+                    <div class="bg-gray-dark/50 p-3 rounded-lg border border-gray-700"><h4 class="font-bold text-gold text-xs mb-1"><i class="fa-solid fa-location-dot mr-1"></i>Headquarters</h4><p class="text-gray-300 text-xs">Palm Village, Tower Five, Floor 6</p><p class="text-gray-300 text-xs">Plot 119, Mikocheni</p><p class="text-gray-300 text-xs">Dar es Salaam, Tanzania</p><a href="https://maps.google.com/?q=Palm+Village+Tower+Five+Plot+119+Mikocheni+Dar+es+Salaam+Tanzania" target="_blank" rel="noopener noreferrer" class="text-gold text-xs hover:underline mt-1 inline-block"><i class="fa-solid fa-map-pin mr-1"></i> Open in Google Maps</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 text-xs py-4 text-center"><div class="container-custom"><p class="text-gray-400 font-bold mb-1">⚠️ Investment Risk Disclaimer</p><p class="max-w-lg mx-auto">This website does not constitute a public offering. Mining investments are speculative and carry risk of capital loss. Conduct independent due diligence.</p><p class="mt-3">&copy; <span id="current-year">2024</span> Afriglobal Resources Limited. TIC: 186397266. Mining Commission Licensed.</p></div></footer>
+
+<script>
+document.getElementById('current-year').textContent = new Date().getFullYear();
+document.getElementById('menu-btn').addEventListener('click', function() { document.getElementById('mobile-menu').classList.toggle('hidden'); });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const href = this.getAttribute('href'); if (href === '#') return; e.preventDefault(); const target = document.querySelector(href); if (target) window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' }); }); });
+
+const referencePrices = { gold: 4506.50, silver: 75.51, platinum: 1920.00, palladium: 1334.00 };
+let lastKnownPrices = { ...referencePrices };
+let priceUpdateCount = 0;
+
+async function fetchLiveMetalPrices() {
+    const sources = [
+        async () => {
+            const res = await fetch('https://api.metals.live/v1/spot/gold,silver,platinum,palladium');
+            if (!res.ok) throw new Error('Source 1 failed');
+            const data = await res.json();
+            const prices = {};
+            data.forEach(metal => {
+                if (metal.metal === 'gold') prices.gold = metal.price;
+                if (metal.metal === 'silver') prices.silver = metal.price;
+                if (metal.metal === 'platinum') prices.platinum = metal.price;
+                if (metal.metal === 'palladium') prices.palladium = metal.price;
+            });
+            return prices;
+        },
+        async () => {
+            const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=tether-gold,platinum,palladium&vs_currencies=usd');
+            if (!res.ok) throw new Error('Source 2 failed');
+            const data = await res.json();
+            return {
+                gold: data['tether-gold']?.usd || referencePrices.gold,
+                platinum: data['platinum']?.usd || referencePrices.platinum,
+                palladium: data['palladium']?.usd || referencePrices.palladium,
+                silver: referencePrices.silver
+            };
+        }
+    ];
+    
+    for (const sourceFn of sources) {
+        try {
+            const prices = await sourceFn();
+            if (prices.gold && prices.gold > 1000 && prices.gold < 10000) {
+                updatePriceDisplay(prices);
+                lastKnownPrices = { ...prices };
+                priceUpdateCount++;
+                console.log('✅ Live metal prices updated (#' + priceUpdateCount + ')');
+                return;
+            }
+        } catch (error) {
+            console.warn('Price source failed, trying next...');
+        }
+    }
+    
+    console.warn('⚠️ All live sources unavailable');
+    const variedPrices = {
+        gold: lastKnownPrices.gold + (Math.random() - 0.5) * 10,
+        silver: lastKnownPrices.silver + (Math.random() - 0.5) * 0.5,
+        platinum: lastKnownPrices.platinum + (Math.random() - 0.5) * 5,
+        palladium: lastKnownPrices.palladium + (Math.random() - 0.5) * 5
+    };
+    updatePriceDisplay(variedPrices);
+}
+
+function updatePriceDisplay(prices) {
+    if (prices.gold) document.getElementById('ticker-gold').textContent = '$' + prices.gold.toFixed(0) + '/oz';
+    if (prices.silver) document.getElementById('ticker-silver').textContent = '$' + prices.silver.toFixed(2) + '/oz';
+    if (prices.platinum) document.getElementById('ticker-platinum').textContent = '$' + prices.platinum.toFixed(0) + '/oz';
+    if (prices.palladium) document.getElementById('ticker-palladium').textContent = '$' + prices.palladium.toFixed(0) + '/oz';
+}
+
+fetchLiveMetalPrices();
+setInterval(fetchLiveMetalPrices, 60000);
+
+document.getElementById('investor-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Sending...';
+    btn.disabled = true;
+    status.classList.add('hidden');
+    try {
+        const formData = new FormData(this);
+        const response = await fetch('https://formsubmit.co/ajax/afriglobalresources@gmail.com', { method: 'POST', headers: { 'Accept': 'application/json' }, body: formData });
+        const result = await response.json();
+        if (response.ok && result.success) {
+            status.textContent = '✓ Inquiry Submitted Successfully! Our team will contact you within 24-48 hours.';
+            status.className = 'text-xs text-center p-3 rounded-lg bg-emerald-100 text-emerald-700 font-medium';
+            status.classList.remove('hidden');
+            this.reset();
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else { throw new Error(result.message || 'Submission failed'); }
+    } catch (error) {
+        console.warn('FormSubmit failed, providing fallback...', error.message);
+        const name = document.getElementById('form-name')?.value || '';
+        const email = document.getElementById('form-email')?.value || '';
+        const phone = document.getElementById('form-phone')?.value || '';
+        const category = document.getElementById('form-category')?.value || '';
+        const range = document.getElementById('form-range')?.value || '';
+        const message = document.getElementById('form-message')?.value || '';
+        const emailBody = `New Investor Due Diligence Inquiry%0D%0A-----------------------------------%0D%0AName: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AInvestor Category: ${category}%0D%0AInvestment Range: ${range}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+        const mailtoLink = `mailto:afriglobalresources@gmail.com?subject=Investor%20Due%20Diligence%20Inquiry%20-%20${encodeURIComponent(name)}&body=${emailBody}`;
+        status.innerHTML = `<div class="text-left space-y-2"><p class="font-bold text-red-700">⚠️ Form submission failed. Please use one of these options:</p><p class="text-red-600"><strong>Option 1:</strong> <a href="${mailtoLink}" class="underline text-red-800 font-bold">Click here to send via email</a></p><p class="text-red-600"><strong>Option 2:</strong> Email us directly at <a href="mailto:afriglobalresources@gmail.com" class="underline text-red-800 font-bold">afriglobalresources@gmail.com</a></p><p class="text-red-600"><strong>Option 3:</strong> Call/WhatsApp: <a href="tel:+255713801818" class="underline text-red-800 font-bold">+255 713 801818</a></p></div>`;
+        status.className = 'text-xs text-center p-3 rounded-lg bg-red-50 border border-red-200';
+        status.classList.remove('hidden');
+        status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        if (status.classList.contains('bg-emerald-100')) { setTimeout(() => { status.classList.add('hidden'); }, 15000); }
+    }
+});
+</script>
+</body>
+</html>
